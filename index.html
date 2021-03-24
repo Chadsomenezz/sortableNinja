@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"/>
+    <style>
+        img{
+            padding: 0;
+            margin: 0;
+            display: block;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+<ul id="sortable">
+    <img src="sorting_images/sort1.png" alt="ninja-1">
+    <img src="sorting_images/sort2.png" alt="ninja-2">
+    <img src="sorting_images/sort3.png" alt="ninja-3">
+    <img src="sorting_images/sort4.png" alt="ninja-4">
+    <img src="sorting_images/sort5.png" alt="ninja-5">
+</ul>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+    $( function() {
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+    } );
+</script>
+</body>
+</html>
